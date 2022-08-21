@@ -1,6 +1,6 @@
 const productos = [{
         id: 1,
-        foto: "https://www.innovaventas.com/tienda/wp-content/uploads/2020/07/camara-web-imilab-cmsxj22a-2mp-full-hd-2-300x300.jpg",
+        foto: src="../Assets/imagenes/habitaciones/habitacion junior.jpg",
         nombre: "Cámara web Xiaomi",
         precio: 14999
     },

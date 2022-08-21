@@ -1,22 +1,22 @@
-//After clase 10
 let carrito=[];
 if(localStorage.getItem("carrito")){
     carrito=JSON.parse(localStorage.getItem("carrito"));
     //cargar los elementos del carro abandonado a la tabla
 }
 let lista=document.getElementById("milista");
-    
-//llamada a renderizar
+
+
+//Carga los elementos al html
 renderizarProductos();
 
 function renderizarProductos() {
     for (const producto of productos) {
         lista.innerHTML+=`<li class="col-sm-3 list-group-item">
             <h3> ID: ${producto.id} </h3>
-            <img src=${producto.foto} width="250" height="250">
+            <img src="${producto.foto}" width="250" height="250">
             <p> Producto: ${producto.nombre}</p>
             <p><strong> $ ${producto.precio} </strong></p>
-            <button class='btn btn-danger' id='btn${producto.id}'>Comprar</button>
+            <button class='btn btn-outline-success' id='btn${producto.id}'>Comprar</button>
         </li>`;
     }
     //eventos boton
@@ -27,6 +27,8 @@ function renderizarProductos() {
         });
     })
 }
+
+//agregar al carrito 
 
 function agregarAlCarrito(producto){
     carrito.push(producto);
@@ -43,9 +45,27 @@ function agregarAlCarrito(producto){
     //sumar el total de la compra
 }
 
-//agregar un boton de finalizar compra -> borrado de estructuras, mensaje al usuario de que
-//su pedido está en proceso de preparacion y entrega.
+function vaciarCarrito(){
+    document.getElementById("limpiarCarrito")
+    carrito.length = 0;
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+    document.getElementById("tablabody").innerHTML = ""
+    
+}
 
-//poder eliminar productos de la tabla y de todas las estructuras de carro
+function mensajeFinCompra(){
+    if(carrito.length=0){
+    alert ("El carrito está vacio.");
+    }else {
+    alert("Su pedido está siendo procesado y preparado para su entrega. El monto a pagar es: ");
+    vaciarCarrito()
+    } 
+}
+
+let finalizarCompra = document.getElementById("finalizarCompra")
+finalizarCompra.addEventListener("click", mensajeFinCompra);{
+}
+
+
 
 
