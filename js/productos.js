@@ -1,37 +1,41 @@
 const productos = [{
-        id: 1,
-        foto: src="../Assets/imagenes/habitaciones/habitacion junior.jpg",
-        nombre: "Cámara web Xiaomi",
+        foto: src="../Assets/imagenes/promociones/cena_romantica.jpg",
+        nombre: "Cena romántica",
         precio: 14999
     },
     {
-        id: 2,
-        foto: "https://cdn.shopify.com/s/files/1/0055/6400/6434/products/51Mov6F8z5L_800x_2cccac65-8649-4cf8-9bb7-eefc1feafc29_300x.jpg?v=1602717301",
-        nombre: "Smart Watch Imilab KW66",
+        foto: src="../Assets/imagenes/promociones/brunch_para_dos.jpg",
+        nombre: "Brunch para dos",
         precio: 5900
     },
     {
-        id: 3,
-        foto: "https://www.elkjop.no/image/dv_web_D180001002180018/10014/chromecast-3-generasjon.jpg?$prod$",
-        nombre: "ChromeCast 3",
+        foto: src="../Assets/imagenes/promociones/cena_tres_pasos.jpg",
+        nombre: "Cena tres pasos",
         precio: 26300
     },
     {
-        id: 4,
-        foto: "https://www.adorama.com/images/300x300/logg603.jpg",
-        nombre: "Mouse Logitech wireless",
+        foto: src="../Assets/imagenes/promociones/cocina_con_los_pequeños.jpg",
+        nombre: "Cocina con los pequeños",
         precio: 1200
     },
     {
-        id: 5,
-        foto: "https://d2r9epyceweg5n.cloudfront.net/stores/001/710/410/products/auriculares-dragon-war-freya-ghs00711-f9591d82e05edf148316231664771725-1024-1024.jpg",
-        nombre: "Auriculares Dragon War",
+        foto: src="../Assets/imagenes/promociones/escapada_con_amigas.jpg",
+        nombre: "Escapada con amigas",
         precio: 120000
     },
     {
-        id: 6,
-        foto: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TroSBzh4_ibrX1JM9PAEKwAAAA%26pid%3DApi&f=1",
-        nombre: "Celular iPhone 12",
+        foto: src="../Assets/imagenes/promociones/noche_de_bodas.jpg",
+        nombre: "Noche de bodas",
+        precio: 240000
+    },
+    {
+        foto: src="../Assets/imagenes/promociones/sunday_brunch.jpg",
+        nombre: "Sunday brunch",
+        precio: 240000
+    },
+    {
+        foto: src="../Assets/imagenes/promociones/terraza.jpg",
+        nombre: "Terraza",
         precio: 240000
     }
 ];

@@ -28,7 +28,7 @@ function renderizarProductos() {
     })
 }
 
-//agregar al carrito 
+//Funcion agregar al carrito/tabla 
 
 function agregarAlCarrito(producto){
     carrito.push(producto);
@@ -42,7 +42,9 @@ function agregarAlCarrito(producto){
         </tr>
     `;
     localStorage.setItem("carrito",JSON.stringify(carrito));
-    //sumar el total de la compra
+
+    //sumar el total de la compra FALTAAAAAAAAAA
+
 }
 
 function vaciarCarrito(){
@@ -52,6 +54,8 @@ function vaciarCarrito(){
     document.getElementById("tablabody").innerHTML = ""
     
 }
+
+//Alert fin de compra+funcion
 
 function mensajeFinCompra(){
     if(carrito.length=0){
