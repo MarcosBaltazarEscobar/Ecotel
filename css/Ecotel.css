@@ -1,0 +1,110 @@
+body {
+    background-color:rgb(255, 255, 255);
+}
+.nav-link{
+    text-decoration: none;
+    color: #b99768;
+    font-weight: bold;
+    
+}
+.banner {
+    background-color: #006d46;
+    background: linear-gradient(to bottom,#006d46,#333);
+    padding: 40px;
+    margin: 1em 0;
+}
+
+.cards{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card-body{
+    background-color: rgb(245, 245, 238);
+}
+.razon{
+    padding: 40px;
+}
+
+H2, h5{
+    color: #b99768;
+}
+
+.newsletter{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+a:link{
+    color:rgb(245, 245, 238);
+}
+a:hover{
+    color: #333;
+}
+footer a:hover{
+    color: #b99768;
+}
+
+.testimonios {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.testimonio-tittle{
+    padding-bottom: 20px;
+}
+.testimonio-text{
+    color: #585552;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 0 0 20px 0;
+    
+}
+.testimonio-box{
+    background: rgba(255, 255, 255, 0.9);
+    border: 15px solid #FFF;
+    position: absolute;
+    padding: 40px 40px 60px 40px;
+    margin-left: 70px;
+    width: 50%;
+    z-index: 3;
+    top: 40%;
+    text-align: left;
+}
+
+.card1{
+    color: #b99768;
+    text-shadow: rgb(104, 104, 104) 5px 5px 10px;
+    background-color:#333
+}
+
+.card2{
+    color: #b99768;
+    text-shadow: rgb(104, 104, 104) 5px 5px 10px;
+    background-color:#333
+}
+.card3{
+    color: #b99768;
+    text-shadow: rgb(104, 104, 104) 5px 5px 10px;
+    background-color:#333
+}
+.card4{
+    color: #b99768;
+    text-shadow: rgb(104, 104, 104) 5px 5px 10px;
+    background-color:#333
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+   
+}
+/* estilo de dark/light mode */
+.dark{
+    background-color: rgb(38, 38, 38);
+    color: rgb(247, 247, 247);
+}
+
+.light{
+    background-color: rgb(247, 247, 247);
+    color: rgb(38, 38, 38);
+}

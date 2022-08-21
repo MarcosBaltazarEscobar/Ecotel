@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Assets/imagenes/ecotel iso.png">
+        <meta name="Keywords" content="hotel, ecosustentable">
+        <meta name="author" content="Marcos Escobar">
+        <meta name="description" content="Hotel de cinco estrellas ubicado en Mendoza, a 25 min del aeropuerto Internacional El Plumberillo">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">  
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- BOOSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <!-- NORMALIZE -->
+        <link rel="stylesheet" href="../css/Normalizeecotel.css">
+        <!-- MI CSS -->
+        <link rel="stylesheet" href="../css/Ecotel.css">
+
+        <title>Ecotel</title>
+    </head>
+    <body>
+        <header class="container ">
+            <div class="row align-items-center">
+                <a href="../index.html"><img src="../Assets/imagenes/ecotel logo.png" alt="nombre_del_hotel" class="col-lg-4"></a>
+                <ul class="col-lg-8 nav justify-content-end ">
+                    <li class="nav-item">
+                        <a href="Habitaciones.html" class="nav-link">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Gastronomía.html" class="nav-link">Gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Promociones.html" class="nav-link">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Eventos.html" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reservas.html" class="nav-link">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="card-deck cards">
+                <div class="card">
+                    <a href="#">
+                        <img src="../Assets/imagenes/habitacionSuite.jpg" class="card-img-top" alt="Noche de bodas">
+                        <div class="card-body">
+                            <h5 class="card-title">Habitación Suite</h5>
+                            <p class="card-text">DIMENSIONES: 70 M2 </p>
+                            <!-- JS aparece y desaparece cuando se apreta la imagen para abajo-->
+                            <div id="descriptions1">
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="../Assets/imagenes/habitaciones_junior.jpg" class="card-img-top" alt="Cena de 3 pasos">
+                        <div class="card-body">
+                          <h5 class="card-title">Habitación Ejecutiva</h5>
+                          <p class="card-text">DIMENSIONES: 55 M2</p>
+                          <!-- JS aparece y desaparece cuando se apreta la imagen para abajo-->
+                          <div id="descriptions2">
+
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="../Assets/imagenes/habitacion junior.jpg" class="card-img-top" alt="Desayuno de domingo">
+                        <div class="card-body">
+                          <h5 class="card-title">Habitación Junior</h5>
+                          <p class="card-text">DIMENSIONES: 45 M2</p>
+                          <!-- JS aparece y desaparece cuando se apreta la imagen para abajo-->
+                          <div id="descriptions3">
+                            <p>SERVICIOS LOREM Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti, fugit debitis reiciendis, error molestias neque nam tenetur, architecto expedita id quis voluptatem delectus rem deserunt eius at tempora sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi autem inventore quae tempore fuga nam maiores labore natus architecto dicta eos, quo praesentium, aut asperiores, nihil quisquam error dolor ipsa!</p>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+        <!-- newsletter -->
+            <div class="text-center newsletter">
+                <p id="parrafito">Si te registras a nuestro Newsletter podras acceder a nuestras mejores ofertas</p>
+                <div class="newsletter">
+                    <form action="formulario" id="formulario">
+                        <label for="newslatte">
+                            <input id=email type="text" name="correo" placeholder="Ingresá tu mail"> 
+                            <input id=name type="text" name="nombre" placeholder="Ingrese su nombre"> 
+                            <input id=pais type="text" name="pais" placeholder="Ingrese su pais">
+                            <button id=submir type="submit">Enviar</button>
+                        </label>
+                    </form> 
+                </div>
+            </div>
+        <!-- fin de newsletter -->
+
+        <!-- Secciones divididas -->
+            <div class="container">
+                <div class="secciones row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h5>SOBRE NOSOTROS</h5>
+                        <ul>
+                            <li> 
+                            <a href="">Responsabilidad social</a>
+                            </li>
+                            <li>
+                            <a href=""></a>
+                            </li>
+                            <li>
+                            <a href="">Sustentabilidad</a>
+                            </li>
+                            <li>
+                            <a href="">Programa de lealtad</a>
+                            </li>
+                            <li>
+                            <a href="">Trabaja con nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>RESERVAS</h5>
+                        <p>Teléfono reservas</p>
+                        <a href="tel:+5499999999">+5499999999</a>
+                        <p>Email reservas</p>
+                        <a href="mailto:marcos.b.escobar@gmail.com">reservas@ecotel.com</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>ATENCION AL CLIENTE</h5>
+                        <ul>
+                            <li>
+                                <a href="">Reclamos</a>
+                            </li>
+                            <li>
+                                <a href="Views/Preguntas frecuentes.html">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>CONTACTANOS</h5>
+                        <ul>
+                            <li>
+                                <h6>Eventos</h6>
+                                <p><a href="tel:+5499999999">+5499999999</a></p>
+                                <p><a href="mailto:marcos.b.escobar@gmail.com">eventos@ecotel.com</a></p>
+                            </li>
+                            <li>
+                                <h6>Marketing & Ventas</h6>
+                                <p><a href="tel:+5499999999">+5499999999</a></p>
+                                <p><a href="mailto:marcos.b.escobar@gmail.com">mkt&ventas@ecotel.com</a></p>
+                            </li>
+                            <li>
+                                <h6>Restaurante</h6>
+                                <p><a href="tel:+5499999999">+5499999999</a></p>
+                                <p><a href="mailto:marcos.b.escobar@gmail.com">luciernaga@ecotel.com</a></p>
+                            </li>
+                            <li>
+                                <a href="Views/Contacto.html">Formulario</a>}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fin de secciones divididas -->
+        </footer>
+            <!-- SCRIPT BOOSTRAP -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            <!-- MI JS -->
+            <script src="./ecoteljs.js"></script>
+            <!-- script AOS -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>AOS.init();</script>
+    </body>
+</html>

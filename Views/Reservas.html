@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/imagenes/ecotel iso.png">
+    <meta name="Keywords" content="hotel, ecosustentable">
+    <meta name="author" content="Marcos Escobar">
+    <meta name="description" content="Hotel de cinco estrellas ubicado en Mendoza, a 25 min del aeropuerto Internacional El Plumberillo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="../css/Normalizeecotel.css">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="../css/Ecotel.css">
+
+    <title>Ecotel</title>
+</head>
+<body>
+    <!-- COMIENZA EL MENU -->
+    <header class="container ">
+            <div class="row align-items-center">
+                <a href="../index.html"><img src="../Assets/imagenes/ecotel logo.png" alt="nombre_del_hotel" class="col-lg-4"></a>
+                <ul class="col-lg-8 nav justify-content-end ">
+                    <li class="nav-item">
+                        <a href="Habitaciones.html" class="nav-link">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Gastronomía.html" class="nav-link">Gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Promociones.html" class="nav-link">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Eventos.html" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reservas.html" class="nav-link">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <!-- FINALIZA EL MENU -->
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                     <!-- DOM evento muestra diferentes opciones segun huespedes -->
+                    <button>
+                        <span>Huespedes</span>
+                        <p>1 adulto</p>
+                    </button>
+                </div>
+                <div class="col-lg-4">
+                    <!-- DOM evento muestra calendario -->
+                    <button>
+                        <span>Fecha de entrada</span>
+                    </button>
+                </div>
+                <div class="col-lg-4">
+                     <!-- DOM evento muestra calendario -->
+                    <button>
+                        <span>Fecha de salida</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Tipos de habitaciones -->
+        <div class="container">
+            <div class="row razon img-thumbnail">
+                <div class="col-lg-4">
+                    <img src="../Assets/imagenes/habitacionSuite.jpg" alt="habitación suite" class="img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <h2>Suite</h2>
+                    <p id="roomSuite">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur molestiae odio similique distinctio quas aliquam odit. Reprehenderit praesentium, iste ea quam distinctio eligendi voluptatum ipsam amet illum officia hic commodi.</p>
+                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
+                    <h5>Detalles de la habitación</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div class="row razon img-thumbnail">
+                <div class="col-lg-4">
+                    <img src="../Assets/imagenes/habitacion junior.jpg" alt="habitación junior" class="img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <h2>Ejecutiva</h2>
+                    <p id="roomJunior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat! Repudiandae numquam veritatis dolorem, quos molestias eligendi assumenda consectetur, sunt optio vero iste tenetur hic eveniet dignissimos corrupti aut odit.</p>
+                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
+                    <h5>Detalles de la habitación</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div class="row razon img-thumbnail">
+                <div class="col-lg-4">
+                    <img src="../Assets/imagenes/habitacion twin.jpg" alt="habitación twin" class="img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <!-- aca agregar el cambio con JS -->
+                    <h2>Junior matrimonial</h2>
+                    <h2>Junior twin</h2>
+                    <!-- aca agregar el cambio con JS -->
+                    <p id="roomTwin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat! Repudiandae numquam veritatis dolorem, quos molestias eligendi assumenda consectetur, sunt optio vero iste tenetur hic eveniet dignissimos corrupti aut odit.</p>
+                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
+                    <h5>Detalles de la habitación</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin tipos de habitaciones -->
+
+        <!-- CARRITO DE HABITACIONES -->
+        <!-- <div class="container"> -->
+            <!-- <ul id="promocionesDisponibles" class="row list-group list-group-horizontal">
+                INICIO Redirección de promociones
+            </ul>
+            <p></p>
+        </div>
+        <div>
+            <h4>Lista de habitaciones</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>          
+                </thead>
+            </table>
+        </div>
+ -->
+    </main>
+    <footer>
+        <!-- newsletter -->
+        <div class="text-center newsletter">
+            <p class="">Si te registras a nuestro Newsletter podras acceder a nuestras mejores ofertas</p>
+            <div class="newsletter">
+                <form action="">
+                    <label for="newslatter">
+                        <input type="text" name="correo" placeholder="Ingresá tu mail"> 
+                        <button type="submit">Enviar</button>
+                    </label>
+                </form> 
+            </div>
+        </div>
+        <!-- fin de newsletter -->
+        <div class="container">
+            <div class="row">
+
+            </div>
+            <span class="">
+                +54 9 9999-9999
+            </span>
+            <a href="mailto:marcos.b.escobar@gmail.com">reservas@ecotel.com</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="Views/Contacto.html">Contacto</a></li>
+                <li><a href="Views/RRHH.html">RRHH</a></li>
+                <li><a href="Views/Noticias.html">Noticias</a></li>
+                <li><a href="Views/Premios.html">Premios</a></li>
+                <li><a href="Views/Politica y privacidad.html">Politica de privacidad</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TripAdvisor</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- SCRIPT BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- <script src="../ecotelreservajs.js"></script> -->
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
