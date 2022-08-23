@@ -74,46 +74,8 @@
             </div>
         </section>
         <!-- Tipos de habitaciones -->
-        <div class="container">
-            <div class="row razon img-thumbnail">
-                <div class="col-lg-4">
-                    <img src="../Assets/imagenes/habitacionSuite.jpg" alt="habitación suite" class="img-fluid">
-                </div>
-                <div class="col-lg-8">
-                    <h2>Suite</h2>
-                    <p id="roomSuite">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur molestiae odio similique distinctio quas aliquam odit. Reprehenderit praesentium, iste ea quam distinctio eligendi voluptatum ipsam amet illum officia hic commodi.</p>
-                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
-                    <h5>Detalles de la habitación</h5>
-                    <button>Reservar</button>
-                </div>
-            </div>
-            <div class="row razon img-thumbnail">
-                <div class="col-lg-4">
-                    <img src="../Assets/imagenes/habitacion junior.jpg" alt="habitación junior" class="img-fluid">
-                </div>
-                <div class="col-lg-8">
-                    <h2>Ejecutiva</h2>
-                    <p id="roomJunior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat! Repudiandae numquam veritatis dolorem, quos molestias eligendi assumenda consectetur, sunt optio vero iste tenetur hic eveniet dignissimos corrupti aut odit.</p>
-                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
-                    <h5>Detalles de la habitación</h5>
-                    <button>Reservar</button>
-                </div>
-            </div>
-            <div class="row razon img-thumbnail">
-                <div class="col-lg-4">
-                    <img src="../Assets/imagenes/habitacion twin.jpg" alt="habitación twin" class="img-fluid">
-                </div>
-                <div class="col-lg-8">
-                    <!-- aca agregar el cambio con JS -->
-                    <h2>Junior matrimonial</h2>
-                    <h2>Junior twin</h2>
-                    <!-- aca agregar el cambio con JS -->
-                    <p id="roomTwin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, placeat! Repudiandae numquam veritatis dolorem, quos molestias eligendi assumenda consectetur, sunt optio vero iste tenetur hic eveniet dignissimos corrupti aut odit.</p>
-                    <!-- DOM EVENTO muestra detalle un ventana flotante -->
-                    <h5>Detalles de la habitación</h5>
-                    <button>Reservar</button>
-                </div>
-            </div>
+        <div class="container" id="habitaciones" >
+            
         </div>
         <!-- Fin tipos de habitaciones -->
 
@@ -187,5 +149,6 @@
     <script>
       AOS.init();
     </script>
+    <script type="module" src="../js/reservas.js"></script>
 </body>
 </html>
