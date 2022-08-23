@@ -12,7 +12,6 @@ renderizarProductos();
 function renderizarProductos() {
     for (const producto of productos) {
         lista.innerHTML+=`<li class="col-sm-3 list-group-item">
-            <h3> ID: ${producto.id} </h3>
             <img src="${producto.foto}" width="250" height="250">
             <p> Producto: ${producto.nombre}</p>
             <p><strong> $ ${producto.precio} </strong></p>
@@ -36,7 +35,6 @@ function agregarAlCarrito(producto){
     alert("Producto: "+producto.nombre+" agregado al carro!");
     document.getElementById("tablabody").innerHTML+=`
         <tr>
-            <td>${producto.id}</td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
         </tr>
@@ -71,5 +69,69 @@ finalizarCompra.addEventListener("click", mensajeFinCompra);{
 }
 
 
+//comienza los métodos de pago
+
+
+// function mostrarMetodosPago()
+
+// {
+//     let = metodoPago = prompt("Elige el método de Pago ingresando el número.\n\n1) Tarjeta de Crédito (3 cuotas sin interes, 6 cuotas con un recargo del 5% o 12 cuotas con un recargo del 10%)\n2) Tarjeta de Débito (1 solo pago, 3 cuotas sin interes, 6 sin interés, 12 con un recargo del 10%)\n3) Cancelar Compra");
+
+//     if (metodoPago == "1"){
+//         tarjetaCrédito()
+//     }else if(metodoPago == "2"){
+//         tarjetaDébito()
+//     }else if(metodoPago == "3"){
+//         alert("Se ha cancelado la compra, será redireccionado a la pantalla de inicio.");    
+//     }else{
+//         alert("No es valido el número ingresado, vuelva a intentar");
+//         mostrarMetodosPago()
+//     }
+// }
+
+// mostrarMetodosPago()
+
+//finaliza los métodos de pago
+
+
+//inicio function de métodos de pagos
+
+// function tarjetaDébito()
+// {
+//     let cantCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1)1 solo pago.\n2) 3 cuotas sin interés\n3) 6 cuotas sin interés\n4) 12 cuotas (Con recargo del 10%)");
+//     if (cantCuotas == 1){
+//         let sinRecargo = precio / 1;
+//         alert("Perfecto, Cada cuota sera de $"+sinRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else if(cantCuotas == 2){
+//         let sinRecargo = precio / 3;
+//         alert("Perfecto, Cada cuota sera de $"+sinRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else if(cantCuotas == 2){
+//         let sinRecargo = precio / 6;
+//         alert("Perfecto, Cada cuota sera de $"+sinRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else if(cantCuotas == 2){
+//         let conRecargo = (precio / 12) * 1.10;
+//         alert("Perfecto, Cada cuota sera de $"+conRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else{
+//         alert("No es valido el número ingresado, vuelva a intentar");
+//         tarjetaDébito()
+//     }
+// }
+// function tarjetaCrédito()
+// {
+//     let cantCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas\n2) 6 cuotas (Con un recargo del 5%)\n3) 12 cuotas (Con un recargo del 10%");
+//     if (cantCuotas == 1){
+//         let sinRecargo = precio / 3;
+//         alert("Perfecto, Cada cuota sera de $"+sinRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else if(cantidadCuotas == 2){
+//         let conRecargo = (precio / 6) * 1.05;
+//         alert("Perfecto, Cada cuota sera de $"+conRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else if(cantidadCuotas == 3){
+//         let conRecargo = (precio / 12) * 1.10;
+//         alert("Perfecto, Cada cuota sera de $"+conRecargo+". Ya seras redireccionado para finalizar la compra.");
+//     }else{
+//         alert("No es valido el número ingresado, vuelva a intentar");
+//         tarjetaCrédito()
+//     }
+// }
 
 

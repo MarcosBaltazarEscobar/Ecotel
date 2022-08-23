@@ -3,33 +3,37 @@ const habitaciones = [
         id: "suite1",
         nombre: "Suite",
         tipo:"Suite",
-        descripcion: "Suite con vista al mar y una cama king size",
+        descripcion: "Suite con vista al jardin de invierno del hotel y una cama king size",
+        descripcionCompleta: "La superficie de esta habitacion es de 60 M2, cuenta con Tv smart, caja de seguridad, teléfono, baño con ducha y jacuzzi, minibar y escritorio de trabajo. Tambien cuenta con balcon con vista al jardin de invierno que se encuentra en el centro de nuestro hotel y servicio de desayuno incluido.",
         imagen: "../Assets/imagenes/habitaciones/habitacionSuite.jpg",
-        precio: 19999,
+        precio: 8800,
     },
     {
         id: "ejecutiva1",
         nombre: "Ejecutiva",
         tipo:"Ejecutiva",
-        descripcion: "Habitación ejecutiva con vista al mar y una cama king size",
+        descripcion: "Habitación ejecutiva con vista al mar y una cama king size ",
+        descripcionCompleta: "La superficie de esta habitacion es de 50 M2, cuenta con Tv smart, caja de seguridad, teléfono, baño con ducha, minibar y escritorio de trabajo. Tambien cuenta con balcón y servicio de desayuno incluido",
         imagen: "../Assets/imagenes/habitaciones/habitacionEjecutiva.jpg",
-        precio: 13122,
+        precio: 6555,
     },
     {
         id: "junior1",
         nombre: "Junior Twins",
         tipo:"JuniorTwins",
         descripcion: "Habitación junior con vista al mar y dos camas",
-        imagen: "../Assets/imagenes/habitaciones/habitacionesJuniorTwins.jpg",
-        precio:123123,
+        descripcionCompleta: "La superficie de esta habitacion es de 42 M2, cuenta con Tv smart, caja de seguridad, teléfono, baño con ducha y jacuzzi, minibar y escritorio de trabajo. Desayuno incluido en la tarifa.",
+        imagen: "../Assets/imagenes/habitaciones/habitacionJuniorTwin.jpg",
+        precio:4300,
     },
     {
         id: "junior2",
         nombre: "Junior Matrimonial",
         tipo:"JuniorMatrimonial",
-        descripcion: "Habitación junior matrimonial con vista al mar y una cama king size",
+        descripcion: "Habitación junior matrimonial",
+        descripcionCompleta: "La superficie de esta habitacion es de 42 M2, cuenta con Tv smart, caja de seguridad, teléfono, baño con ducha y jacuzzi, minibar y escritorio de trabajo. Desayuno incluido en la tarifa.",
         imagen: "../Assets/imagenes/habitaciones/habitacionJuniorMatrimonial.jpg",
-        precio:567567,
+        precio:4300,
     }
 ]
 
@@ -65,7 +69,7 @@ const dibujarHabitaciones = () => {
                         </div>
                         <div class="modal-body">
                             <img src="${habitacion.imagen}" alt="${habitacion.nombre}">
-                            <p>${habitacion.descripcion}</p>
+                            <p>${habitacion.descripcionCompleta}</p>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-success" id=${habitacion.tipo} data-dismiss="modal">Reservar</button>
