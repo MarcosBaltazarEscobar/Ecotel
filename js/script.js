@@ -13,7 +13,7 @@ function renderizarProductos() {
     for (const producto of productos) {
         lista.innerHTML+=`<li class="col-sm-3 list-group-item">
             <img src="${producto.foto}" width="250" height="250">
-            <p> Producto: ${producto.nombre}</p>
+            <p> ${producto.nombre}</p>
             <p><strong> $ ${producto.precio} </strong></p>
             <button class='btn btn-outline-success' id='btn${producto.id}'>Comprar</button>
         </li>`;
@@ -39,10 +39,7 @@ function agregarAlCarrito(producto){
             <td>${producto.precio}</td>
         </tr>
     `;
-    localStorage.setItem("carrito",JSON.stringify(carrito));
-
-    //sumar el total de la compra FALTAAAAAAAAAA
-
+    localStorage.setItem("carrito",JSON.stringify(carrito)); 
 }
 
 function vaciarCarrito(){
@@ -52,6 +49,7 @@ function vaciarCarrito(){
     document.getElementById("tablabody").innerHTML = ""
     
 }
+
 
 //Alert fin de compra+funcion
 
@@ -67,6 +65,10 @@ function mensajeFinCompra(){
 let finalizarCompra = document.getElementById("finalizarCompra")
 finalizarCompra.addEventListener("click", mensajeFinCompra);{
 }
+
+
+//INICIAR SESION
+
 
 
 //comienza los métodos de pago

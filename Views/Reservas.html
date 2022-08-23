@@ -75,69 +75,85 @@
         </section>
         <!-- Tipos de habitaciones -->
         <div class="container" id="habitaciones" >
-            
+            <!-- redireccion de habitaciones de reservas.js -->
         </div>
         <!-- Fin tipos de habitaciones -->
-
-        <!-- CARRITO DE HABITACIONES -->
-        <!-- <div class="container"> -->
-            <!-- <ul id="promocionesDisponibles" class="row list-group list-group-horizontal">
-                INICIO Redirección de promociones
-            </ul>
-            <p></p>
-        </div>
-        <div>
-            <h4>Lista de habitaciones</h4>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>          
-                </thead>
-            </table>
-        </div>
- -->
     </main>
     <footer>
         <!-- newsletter -->
         <div class="text-center newsletter">
-            <p class="">Si te registras a nuestro Newsletter podras acceder a nuestras mejores ofertas</p>
+            <p id="parrafito">Si te registras a nuestro Newsletter podras acceder a nuestras mejores ofertas</p>
             <div class="newsletter">
-                <form action="">
-                    <label for="newslatter">
-                        <input type="text" name="correo" placeholder="Ingresá tu mail"> 
-                        <button type="submit">Enviar</button>
+                <form action="formulario" id="formulario">
+                    <label for="newslatte">
+                        <input id=email type="text" name="correo" placeholder="Ingresá tu mail"> 
+                        <button id=submit type="submit">Enviar</button>
                     </label>
                 </form> 
             </div>
         </div>
         <!-- fin de newsletter -->
-        <div class="container">
-            <div class="row">
 
+        <!-- Secciones divididas -->
+        <div class="container">
+          <div class="secciones row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h5>SOBRE NOSOTROS</h5>
+              <ul>
+                <li> 
+                  <a href="">Responsabilidad social</a>
+                </li>
+                <li>
+                  <a href=""></a>
+                </li>
+                <li>
+                  <a href="">Sustentabilidad</a>
+                </li>
+                <li>
+                  <a href="">Programa de lealtad</a>
+                </li>
+                <li>
+                  <a href="">Trabaja con nosotros</a>
+                </li>
+              </ul>
             </div>
-            <span class="">
-                +54 9 9999-9999
-            </span>
-            <a href="mailto:marcos.b.escobar@gmail.com">reservas@ecotel.com</a>
-        </div>
-        <div>
-            <ul>
-                <li><a href="Views/Contacto.html">Contacto</a></li>
-                <li><a href="Views/RRHH.html">RRHH</a></li>
-                <li><a href="Views/Noticias.html">Noticias</a></li>
-                <li><a href="Views/Premios.html">Premios</a></li>
-                <li><a href="Views/Politica y privacidad.html">Politica de privacidad</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">TripAdvisor</a></li>
-            </ul>
+            <div class="col-lg-3 col-md-6">
+              <h5>RESERVAS</h5>
+              <p>Teléfono reservas</p>
+              <a href="tel:+5499999999">+5499999999</a>
+              <p>Email reservas</p>
+              <a href="mailto:marcos.b.escobar@gmail.com">reservas@ecotel.com</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>ATENCION AL CLIENTE</h5>
+              <ul>
+                <li><a href="">Reclamos</a></li>
+                <li><a href="Views/Preguntas frecuentes.html">Preguntas frecuentes</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>CONTACTANOS</h5>
+              <ul>
+                <li>
+                  <h6>Eventos</h6>
+                  <p><a href="tel:+5499999999">+5499999999</a></p>
+                  <p><a href="mailto:marcos.b.escobar@gmail.com">eventos@ecotel.com</a></p>
+                </li>
+                <li>
+                  <h6>Marketing & Ventas</h6>
+                  <p><a href="tel:+5499999999">+5499999999</a></p>
+                  <p><a href="mailto:marcos.b.escobar@gmail.com">mkt&ventas@ecotel.com</a></p>
+                </li>
+                <li>
+                  <h6>Restaurante</h6>
+                  <p><a href="tel:+5499999999">+5499999999</a></p>
+                  <p><a href="mailto:marcos.b.escobar@gmail.com">luciernaga@ecotel.com</a></p>
+                </li>
+                <li>
+                  <a href="Views/Contacto.html">Formulario</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
     </footer>
     <!-- SCRIPT BOOSTRAP -->

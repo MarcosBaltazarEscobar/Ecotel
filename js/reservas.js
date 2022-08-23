@@ -42,7 +42,7 @@ const dibujarHabitaciones = () => {
     for(let i = 0; i < habitaciones.length; i++) {
         const habitacion = habitaciones[i];
         const divHabitacion = document.createElement("div");
-        divHabitacion.classList.add("habitacion", "col-md-4", "col-sm-6","d-flex", "flex-column", "align-items-center", "justify-content-center");
+        divHabitacion.classList.add("habitacion", "col-md-12","col-lg-12", "col-sm-6","d-flex", "flex-column", "align-items-center", "justify-content-center");
         divHabitacion.innerHTML = `
             <img src="${habitacion.imagen}" alt="${habitacion.nombre}">
             <h3>${habitacion.nombre}</h3>
