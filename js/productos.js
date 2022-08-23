@@ -47,3 +47,4 @@ const productos = [{
         precio: 240000
     }
 ];
+

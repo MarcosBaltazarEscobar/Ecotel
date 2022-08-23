@@ -46,6 +46,7 @@ const dibujarHabitaciones = () => {
         divHabitacion.innerHTML = `
             <img src="${habitacion.imagen}" alt="${habitacion.nombre}">
             <h3>${habitacion.nombre}</h3>
+            <p class="precio"><strong>$ ${habitacion.precio} / Por noche</strong></p>
             <p>${habitacion.descripcion}</p>
             <button class="btn btn-success" id=${habitacion.id}>Mas Detalles</button>
         `;
@@ -70,6 +71,7 @@ const dibujarHabitaciones = () => {
                         <div class="modal-body">
                             <img src="${habitacion.imagen}" alt="${habitacion.nombre}">
                             <p>${habitacion.descripcionCompleta}</p>
+                            <p class="precio">Precio por noche:$ ${habitacion.precio}</p>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-success" id=${habitacion.tipo} data-dismiss="modal">Reservar</button>

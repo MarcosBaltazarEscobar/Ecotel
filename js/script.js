@@ -1,7 +1,7 @@
 let carrito=[];
 if(localStorage.getItem("carrito")){
     carrito=JSON.parse(localStorage.getItem("carrito"));
-    //cargar los elementos del carro abandonado a la tabla
+    //FALTA cargar los elementos del carro abandonado a la tabla
 }
 let lista=document.getElementById("milista");
 
@@ -42,6 +42,25 @@ function agregarAlCarrito(producto){
     localStorage.setItem("carrito",JSON.stringify(carrito)); 
 }
 
+//agregar al carrito 
+
+function agregarAlCarrito(producto){
+    carrito.push(producto);
+    console.log(carrito);
+    alert("Producto: "+producto.nombre+" agregado al carro!");
+    document.getElementById("tablabody").innerHTML+=`
+        <tr>
+            <td>${producto.id}</td>
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+        </tr>
+    `;
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+    //sumar el total de la compra
+}
+
+
+//vacia el la tabla y el carrito del logstorage al apretar "finalizar compra"
 function vaciarCarrito(){
     document.getElementById("limpiarCarrito")
     carrito.length = 0;
@@ -49,12 +68,9 @@ function vaciarCarrito(){
     document.getElementById("tablabody").innerHTML = ""
     
 }
-
-
-//Alert fin de compra+funcion
-
+//mensaje que se envia al finalizar compra
 function mensajeFinCompra(){
-    if(carrito.length=0){
+    if(carrito.length===0){
     alert ("El carrito está vacio.");
     }else {
     alert("Su pedido está siendo procesado y preparado para su entrega. El monto a pagar es: ");
@@ -67,9 +83,19 @@ finalizarCompra.addEventListener("click", mensajeFinCompra);{
 }
 
 
-//INICIAR SESION
+carrito.length === 0 && console.log ("el carrito esta vacio")
 
 
+
+const desestructurar=(item) =>{
+    const {id,nombre}=item
+    console.log(id,nombre)
+}
+desestructurar(productos)
+
+//SPREAD
+
+const nombresPromociones=["Cena romantica","Noche para dos","Cena tres pasos"]
 
 //comienza los métodos de pago
 
