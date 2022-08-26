@@ -47,7 +47,15 @@ function agregarAlCarrito(producto){
 function agregarAlCarrito(producto){
     carrito.push(producto);
     console.log(carrito);
-    alert("Producto: "+producto.nombre+" agregado al carro!");
+    // alert("Producto: "+producto.nombre+" agregado al carro!");
+    Swal.fire({
+        title: producto.nombre,
+        text: 'Precio de la promoción:' + producto.precio,
+        imageUrl: producto.foto,
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
     document.getElementById("tablabody").innerHTML+=`
         <tr>
             <td>${producto.id}</td>
@@ -71,9 +79,20 @@ function vaciarCarrito(){
 //mensaje que se envia al finalizar compra
 function mensajeFinCompra(){
     if(carrito.length===0){
-    alert ("El carrito está vacio.");
+    // alert ("El carrito está vacio.");
+    Swal.fire({
+        icon: 'error',
+        title: 'Mmm... algo salió mal',
+        text: 'El carrito aún está vacío! Selecciona alguna promocion por favor.',
+        footer: '<a href="">Promociones validas en el día de hoy</a>'
+      })
     }else {
-    alert("Su pedido está siendo procesado y preparado para su entrega. El monto a pagar es: ");
+    // alert("Su pedido está siendo procesado y preparado para su entrega. El monto a pagar es: ");
+    Swal.fire(
+        'Finalizaste tu seleccion de promociones!!',
+        'Ahora te pediremos los datos para poder reservar tu lugar ',
+        'success'
+      )
     vaciarCarrito()
     } 
 }
