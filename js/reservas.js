@@ -183,22 +183,20 @@ const options = {
 	}
 };
 
+let divTemperatura= document.querySelector("#divtemperatura");
+
+//  divTemperatura.innerHTML=`
+//      <div class="card-panel white col s12">
+//      <div class="black-text">
+//      <h2>El clima de Mendoza es: </h2>
+//      <p class="temperatura">
+//          ${(response.data.[0].temp)},
+//      </p>
+//      </div>
+//      </div>
+//  `;
+
 fetch('https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lat=-32.8&lon=-68.8', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-
-let divTemperatura= document.querySelector("#divtemperatura");
-
-// divTemperatura.innerHTML=`
-//     <div class="card-panel white col s12">
-//     <div class="black-text">
-//     <h2>El clima de Mendoza es: </h2>
-//     <p class="temperatura">
-//         ${parseFloat(data.[0].temp)},
-//     </p>
-//     </div>
-//     </div>
-// `
-
-    //mirar el video de youtube, la idea es colocar una card estatica para que se vea la temperatura maxima, minima de mendoza
