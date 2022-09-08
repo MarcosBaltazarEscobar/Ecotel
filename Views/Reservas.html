@@ -50,34 +50,36 @@
   </header>
     <!-- FINALIZA EL MENU -->
     <main>
-        <section class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                     <!-- DOM evento muestra diferentes opciones segun huespedes -->
-                    <button>
-                        <span>Huespedes</span>
-                        <p>1 adulto</p>
-                    </button>
-                </div>
-                <div class="col-lg-4">
-                    <!-- DOM evento muestra calendario -->
-                    <button>
-                        <span>Fecha de entrada</span>
-                    </button>
-                </div>
-                <div class="col-lg-4">
-                     <!-- DOM evento muestra calendario -->
-                    <button>
-                        <span>Fecha de salida</span>
-                    </button>
-                </div>
-            </div>
-        </section>
+      <div id="divTemperatura">
+        <!-- Aqui van las temperaturas -->
+        
+      </div>
         <!-- Tipos de habitaciones -->
         <div class="container" id="habitaciones" >
             <!-- redireccion de habitaciones de reservas.js -->
         </div>
         <!-- Fin tipos de habitaciones -->
+        <div>
+          <h4>Reserva:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody id="tablabodyReservas">
+                    <!-- aqui tabla carrito -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="reservasTotal"><strong> Total $</strong></td>
+                        <td id="resultadoFinal"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="btn btn-light" id="finalizarReserva">Finalizar tus reservas</button>
+        </div>
     </main>
     <footer>
         <!-- newsletter -->
@@ -165,6 +167,10 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- SWEET ALERT  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script type="module" src="../js/reservas.js"></script>
 </body>
 </html>

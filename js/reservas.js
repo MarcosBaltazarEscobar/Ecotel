@@ -87,7 +87,17 @@ const dibujarHabitaciones = () => {
             const btnReservar = document.getElementById(habitacion.tipo);
             btnReservar.addEventListener('click', (e) => {
                 reservar(
-                    buscarHabitacion(e.target.id)
+                    buscarHabitacion(e.target.id),
+                    agregarHabitaciones(habitacion),
+                    Swal.fire({
+                        title: 'Se ha seleccionado la habitacion correctamente',
+                        showClass: {
+                          popup: 'animate__animated animate__fadeInDown'
+                        },
+                        hideClass: {
+                          popup: 'animate__animated animate__fadeOutUp'
+                        }
+                      })
                 )
             })
         })
@@ -108,3 +118,87 @@ const reservar = (habitacion) => {
     reservas.push(habitacion);
     console.log(reservas);
 }
+
+//----------------
+
+
+
+function agregarHabitaciones(habitacion){
+    document.getElementById("tablabodyReservas").innerHTML+=`
+        <tr>
+            <td>${habitacion.nombre}</td>
+            <td>${habitacion.precio}</td>
+        </tr>
+    `;
+    localStorage.setItem("reservas",JSON.stringify(reservas));
+    document.getElementById("reservasTotal").innerText=(`Total: $ ${calcularTotalReserva()}`);
+    localStorage.setItem("reservas",JSON.stringify(reservas)); 
+}
+
+function calcularTotalReserva() {
+    let suma = 0;
+    for (const elemento of reservas) {
+        suma = suma + elemento.precio ;
+    }
+    return suma;
+}
+
+function vaciarReservas(){
+    document.getElementById("limpiarReservas")
+    reservas.length = 0;
+    localStorage.setItem("reservas",JSON.stringify(reservas));
+    document.getElementById("tablabodyReservas").innerHTML = ""
+    
+}
+//mensaje que se envia al finalizar compra
+function mensajeFinReservas(){
+    if(reservas.length===0){
+    // alert ("El carrito está vacio.");
+    Swal.fire({
+        icon: 'error',
+        title: 'Mmm... algo salió mal',
+        text: 'El carrito aún está vacío! Selecciona alguna promocion por favor.',
+        footer: '<a href="">Promociones validas en el día de hoy</a>'
+      })
+    }else {
+    // alert("Su pedido está siendo procesado y preparado para su entrega. El monto a pagar es: ");
+    Swal.fire(
+        'Finalizaste tus reservas!!',
+        'A continuacion te pediremos tus datos para finalizar tu reserva. ',
+        'success'
+      )
+    vaciarReservas()
+    } 
+}
+
+let realizarReserva = document.getElementById("finalizarReserva")
+realizarReserva.addEventListener("click", mensajeFinReservas);{
+}
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '4eabe1b59dmsh8a04680525baf99p102831jsnb14b1c11c826',
+		'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com'
+	}
+};
+
+fetch('https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lat=-32.8&lon=-68.8', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+let divTemperatura= document.querySelector("#divtemperatura");
+
+// divTemperatura.innerHTML=`
+//     <div class="card-panel white col s12">
+//     <div class="black-text">
+//     <h2>El clima de Mendoza es: </h2>
+//     <p class="temperatura">
+//         ${parseFloat(data.[0].temp)},
+//     </p>
+//     </div>
+//     </div>
+// `
+
+    //mirar el video de youtube, la idea es colocar una card estatica para que se vea la temperatura maxima, minima de mendoza

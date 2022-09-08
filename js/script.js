@@ -1,7 +1,6 @@
 let carrito=[];
 if(localStorage.getItem("carrito")){
     carrito=JSON.parse(localStorage.getItem("carrito"));
-    //FALTA cargar los elementos del carro abandonado a la tabla
 }
 let lista=document.getElementById("milista");
 
@@ -58,15 +57,23 @@ function agregarAlCarrito(producto){
       })
     document.getElementById("tablabody").innerHTML+=`
         <tr>
-            <td>${producto.id}</td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
         </tr>
     `;
     localStorage.setItem("carrito",JSON.stringify(carrito));
     //sumar el total de la compra
+    document.getElementById("gastoTotal").innerText=(`Total: $ ${calcularTotal()}`);
+    localStorage.setItem("carrito",JSON.stringify(carrito));
 }
 
+function calcularTotal() {
+    let suma = 0;
+    for (const elemento of carrito) {
+        suma = suma + elemento.precio ;
+    }
+    return suma;
+}
 
 //vacia el la tabla y el carrito del logstorage al apretar "finalizar compra"
 function vaciarCarrito(){
@@ -115,6 +122,8 @@ desestructurar(productos)
 //SPREAD
 
 const nombresPromociones=["Cena romantica","Noche para dos","Cena tres pasos"]
+
+
 
 //comienza los métodos de pago
 
