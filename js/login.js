@@ -34,6 +34,7 @@ window.addEventListener('load', ()=> {
          }
     }
 
+
     const validaFalla = (input, msje) => {
         const formControl = input.parentElement
         const aviso = formControl.querySelector('p')

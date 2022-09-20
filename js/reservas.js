@@ -132,7 +132,7 @@ function agregarHabitaciones(habitacion){
         </tr>
     `;
     localStorage.setItem("reservas",JSON.stringify(reservas));
-    document.getElementById("reservasTotal").innerText=(`Total: $ ${calcularTotalReserva()}`);
+    document.getElementById("reservasTotal").innerText=(`Total: $${calcularTotalReserva()}`);
     localStorage.setItem("reservas",JSON.stringify(reservas)); 
 }
 
