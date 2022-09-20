@@ -37,6 +37,7 @@ const habitaciones = [
     }
 ]
 
+
 const divHabitaciones = document.getElementById("habitaciones");
 const dibujarHabitaciones = () => {
     for(let i = 0; i < habitaciones.length; i++) {
@@ -119,7 +120,7 @@ const reservar = (habitacion) => {
     console.log(reservas);
 }
 
-//----------------
+//se agregan habitaciones a la tabla de reservas
 
 
 
@@ -175,6 +176,9 @@ let realizarReserva = document.getElementById("finalizarReserva")
 realizarReserva.addEventListener("click", mensajeFinReservas);{
 }
 
+
+// api de temperatura de la ciudad de mendoza
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -200,3 +204,6 @@ fetch('https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lat=-32.8&l
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+let temperaturaMendoza= []
+

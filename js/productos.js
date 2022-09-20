@@ -26,25 +26,25 @@ const productos = [{
         id:5,
         foto: src="../Assets/imagenes/promociones/escapada_con_amigas.jpg",
         nombre: "Escapada con amigas",
-        precio: 120000
+        precio: 1200
     },
     {
         id:6,
         foto: src="../Assets/imagenes/promociones/noche_de_bodas.jpg",
         nombre: "Noche de bodas",
-        precio: 240000
+        precio: 2400
     },
     {
         id:7,
         foto: src="../Assets/imagenes/promociones/sunday_brunch.jpg",
         nombre: "Sunday brunch",
-        precio: 240000
+        precio: 3000
     },
     {
         id:8,
         foto: src="../Assets/imagenes/promociones/terraza.jpg",
         nombre: "Terraza",
-        precio: 240000
+        precio: 2250
     }
 ];
 
